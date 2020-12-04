@@ -19,3 +19,8 @@ workflows:
   main:
     jobs:
       - build-and-test
+dependencies:
+  override:
+    - pip install -r server/requirements.txt
+    - pip install -r tests/requirements.txt
+    # more stuff follows...
